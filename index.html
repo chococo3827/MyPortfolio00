@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chowon's porfolio</title>    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- plugin -->
+    <script src="js/plugin/splitting.min.js"></script>
+    <script src="js/plugin/scrolla.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <div class="gnbBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#home" data-splitting>home</a></li>
+                    <li><a href="#aboutMe" data-splitting>about me</a></li>
+                    <li><a href="#mySkill" data-splitting>my skill</a></li>
+                    <li><a href="#myWork" data-splitting>my work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Home -->
+        <section id="home" class="animate" data-animate="motion">
+            <div class="mainText">
+                <p>My Portfolio</p>
+                <p><span>made by Chowon</span></p>
+            </div>
+            <div class="subText">
+                <p>HAPPY 추석<span>♡</span></p>
+            </div>
+            <!-- <div class="svgAni">
+            </div> -->
+        </section>
+
+        <!-- about me -->
+        <section id="aboutMe">
+            <div class="title">
+                <p class="a">About</p>
+                <p class="b">Me</p>
+            </div>
+            <div class="content">
+                <div class="left animate" data-animate="motion">
+                    <a href="#">
+                        <img src="img/새싹.png" alt="새싹">
+                        <img src="img/readMore.png" alt="readMore">
+                    </a>
+                    <div class="academy">
+                        <p>코리아IT아카데미 자바기반 풀스텍 개발자 과정 수료(2022)</p>
+                        <p>이젠아카데미 웹디자인 과정 수료(2023)</p>
+                    </div>
+                </div>
+                <div class="right animate" data-animate="motion" data-splitting>
+                    <div class="my-info">
+                        <p>안녕하세요! <span>"새싹처럼 쑥쑥 자라는"</span> 퍼블리셔 임초원입니다.</p>
+                        <p>
+                            개발자들과도 소통할 수 있는<br>
+                            자라나는 새싹처럼 지식을 먹어치우며 쑥쑥 성장할 수 있는<br>
+                            이름따라 넓은 성장의 밭을 가진 퍼블리셔가 되어<br> 
+                            미래에 프론트엔드 개발자가 되고싶습니다.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- my skill -->
+        <section id="mySkill">
+            <div class="title">
+                <p class="a">My</p>
+                <p class="b">Skill</p>
+            </div>
+            <div class="content">
+                <div class="square">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div>
+                        <h2>HTML</h2>
+                    </div>
+                </div>
+                <div class="square">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div>
+                        <h2>CSS</h2>
+                    </div>
+                </div>
+                <div class="square">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div>
+                        <h2>Js</h2>
+                    </div>
+                </div>
+                <div class="square">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div>
+                        <h2>Jquery</h2>
+                    </div>
+                </div>
+                <div class="square">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div>
+                        <h2>Ps</h2>
+                    </div>
+                </div>
+                <div class="square">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div>
+                        <h2>Github</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- my work -->
+        <section id="myWork">
+
+        </section>
+    </div>
+</body>
+</html>
