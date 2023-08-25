@@ -48,11 +48,40 @@ $(function(){
             start: '0% 100%',
             end: '0% 10%',
             scrub: 1,
-            markers: true
+            // markers: true
         }
     })
     .to('.wrap', {backgroundColor:'#000', color:'#fff', ease:'none', duration:5},0)
     .fromTo('#mySkill .title .a',{x:'-100%'},{x:'0%', ease:'none', duration:5},0)
     .fromTo('#mySkill .title .b',{x:'100%'},{x:'0%', ease:'none', duration:5},0)
     // .to('#mySkill .title', {position:'fixed', ease:'none', left:'0', top:'0', width:'100%', duration:5},0)
+
+    // my work 양쪽에서 나타나기
+    gsap.timeline({
+        scrollTrigger:{
+            trigger: '#myWork',
+            start: '0% 100%',
+            end: '0% 10%',
+            scrub: 1,
+            // markers: true
+        }
+    })
+    .fromTo('#myWork .title .a',{x:'-200%'},{x:'0%', ease:'none', duration:5},0)
+    .fromTo('#myWork .title .b',{x:'200%'},{x:'0%', ease:'none', duration:5},0)
 })
+
+// 새 창으로 팝업 띄우기
+// 모바일 모드
+function openMobile(){
+    const url = '/project01/index.html';
+    const name = 'Rest in Nature-mobile'
+    const option = 'width = 450, height = 700';
+    window.open(url, name, option);
+};
+// 태블릿 모드
+function openTablet(){
+    const url = '/project01/index.html';
+    const name = 'Rest in Nature-tablet'
+    const option = 'width = 1024';
+    window.open(url, name, option);
+};

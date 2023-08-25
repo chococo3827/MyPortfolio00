@@ -11,6 +11,8 @@
     <script src="js/plugin/scrolla.jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/181f286c37.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -89,6 +91,7 @@
                     <span></span>
                     <div>
                         <h2>HTML</h2>
+                        <img src="img/html.png" alt="html logo">
                     </div>
                 </div>
                 <div class="square">
@@ -97,6 +100,7 @@
                     <span></span>
                     <div>
                         <h2>CSS</h2>
+                        <img src="img/css.png" alt="css logo">
                     </div>
                 </div>
                 <div class="square">
@@ -105,6 +109,7 @@
                     <span></span>
                     <div>
                         <h2>Js</h2>
+                        <img src="img/js.png" alt="js logo">
                     </div>
                 </div>
                 <div class="square">
@@ -113,6 +118,7 @@
                     <span></span>
                     <div>
                         <h2>Jquery</h2>
+                        <img src="img/jquery.png" alt="jquery logo">
                     </div>
                 </div>
                 <div class="square">
@@ -121,6 +127,7 @@
                     <span></span>
                     <div>
                         <h2>Ps</h2>
+                        <img src="img/ps.png" alt="ps logo">
                     </div>
                 </div>
                 <div class="square">
@@ -129,15 +136,49 @@
                     <span></span>
                     <div>
                         <h2>Github</h2>
+                        <img src="img/github.png" alt="github logo">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- my work -->
-        <section id="myWork">
-
-        </section>
+        <div id="myWork">
+            <div class="title">
+                <p class="a">My</p>
+                <p class="b">Work</p>
+            </div>
+            <section class="project">
+                <div class="content"><!--나뭇잎 모양 테두리-->
+                    <h2>Rest in Nature</h2>
+                    <div class="inner">
+                        <div class="project-img">
+                            <img src="img/restinnature-pc.jpg" alt="restinnature-pc">
+                            <!-- <img src="img/restinnature-tablet2.jpg" alt="restinnature-tablet"> -->
+                            <!-- <img src="img/restinnature-mobile.jpg" alt="restinnature-mobile"> -->
+                        </div>
+                        <div class="project-info">
+                            <p>
+                                향수 브랜드 rest in nature 사이트를 리뉴얼 했습니다.<br>
+                                자연의 향기라는 이미지에 맞게 초록색과 베이지색을 메인으로 만들었습니다.
+                            </p>
+                            <p><span>Program</span>Visual Studio Code</p>
+                            <div class="buttons">
+                                <a href="project01/index.html" target="_blank">
+                                    <i class="fa-solid fa-desktop" style="color: #ddd;"></i>PC
+                                </a>
+                                <a href="javascript:openTablet();">
+                                    <i class="fa-solid fa-tablet-screen-button" style="color: #ddd;"></i>Tablet
+                                </a>
+                                <a href="javascript:openMobile();">
+                                    <i class="fa-solid fa-mobile-screen" style="color: #ddd;"></i>Mobile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 </html>
