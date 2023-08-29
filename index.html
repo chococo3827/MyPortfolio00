@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chowon's porfolio</title>    
+    <!-- velocity css -->
+    <!-- <link rel="stylesheet" href="js/velocity/velocity.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- velociy js -->
+    <script src="js/velocity/modernizr.js"></script>
+    <script src="js/velocity/velocity.min.js"></script>
+    <script src="js/velocity/velocity.ui.min.js"></script>
+    <script src="js/velocity/main.js"></script>
     <!-- plugin -->
     <script src="js/plugin/splitting.min.js"></script>
     <script src="js/plugin/scrolla.jquery.min.js"></script>
@@ -30,6 +37,7 @@
                     <li><a href="#aboutMe" data-splitting>about me</a></li>
                     <li><a href="#mySkill" data-splitting>my skill</a></li>
                     <li><a href="#myWork" data-splitting>my work</a></li>
+                    <li><a href="#contact" data-splitting>contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -143,12 +151,14 @@
         </section>
 
         <!-- my work -->
-        <div id="myWork">
+        <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+        <div id="myWork" data-hijacking="off" data-animation="scaleDown">
             <div class="title">
                 <p class="a">My</p>
                 <p class="b">Work</p>
             </div>
-            <section class="project">
+            <!-- rest in nature -->
+            <section class="cd-section project">
                 <div class="content"><!--나뭇잎 모양 테두리-->
                     <h2>Rest in Nature</h2>
                     <div class="inner">
@@ -178,7 +188,85 @@
                     </div>
                 </div>
             </section>
+            <!-- login & todolist -->
+            <section class="cd-section project">
+                <div class="content"><!--나뭇잎 모양 테두리-->
+                    <h2>Login & ToDo List</h2>
+                    <div class="inner">
+                        <div class="project-img">
+                            <img src="img/loginpage.jpg" alt="login&todo-pc">
+                            <!-- <img src="img/restinnature-tablet2.jpg" alt="restinnature-tablet"> -->
+                            <!-- <img src="img/restinnature-mobile.jpg" alt="restinnature-mobile"> -->
+                        </div>
+                        <div class="project-info">
+                            <p>
+                                로그인과 로그아웃을 할 수 있는 todo 리스트입니다.<br>
+                                새로고침 할 때마다 배경이미지와 밑에 나오는 명언이 랜덤으로 바뀝니다.<br>
+                                위치탐색을 허락할 경우 해당 지역의 날씨도 나오도록 만들었습니다.
+                            </p>
+                            <p><span>Program</span>Visual Studio Code</p>
+                            <div class="buttons">
+                                <a href="momentum/index.html" target="_blank">
+                                    <i class="fa-solid fa-desktop" style="color: #ddd;"></i>PC
+                                </a>
+                                <a href="javascript:openTablet2();">
+                                    <i class="fa-solid fa-tablet-screen-button" style="color: #ddd;"></i>Tablet
+                                </a>
+                                <a href="javascript:openMobile2();">
+                                    <i class="fa-solid fa-mobile-screen" style="color: #ddd;"></i>Mobile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 그림판 -->
+            <section class="cd-section project">
+                <div class="content"><!--나뭇잎 모양 테두리-->
+                    <h2>Canvas</h2>
+                    <div class="inner">
+                        <div class="project-img">
+                            <img src="img/canvas.jpg" alt="canvas-pc">
+                            <!-- <img src="img/restinnature-tablet2.jpg" alt="restinnature-tablet"> -->
+                            <!-- <img src="img/restinnature-mobile.jpg" alt="restinnature-mobile"> -->
+                        </div>
+                        <div class="project-info">
+                            <p>
+                                색깔과 너비를 바꾸며 그릴 수 있는 그림판입니다.<br>
+                                그리기와 채우기 모드를 바꿀 수 있으며 전체 지우기와 지우개 모드도 가능하며<br>
+                                글자를 찍을 수도 있고 이미지 부르기, 저장 기능도 만들었습니다.
+                            </p>
+                            <p><span>Program</span>Visual Studio Code</p>
+                            <div class="buttons">
+                                <a href="MEME-MAKER/index.html" target="_blank">
+                                    <i class="fa-solid fa-desktop" style="color: #ddd;"></i>PC
+                                </a>
+                                <a href="javascript:openTablet3();">
+                                    <i class="fa-solid fa-tablet-screen-button" style="color: #ddd;"></i>Tablet
+                                </a>
+                                <a href="javascript:openMobile3();">
+                                    <i class="fa-solid fa-mobile-screen" style="color: #ddd;"></i>Mobile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+
+        <!-- contact video -->
+        <section id="contact">
+            <div class="contactVideo">
+                <video autoplay="" muted="" loop="" playinline="">
+                    <source src="img/video.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="title">
+                <h2>Contact Me</h2>
+                <span>010-4643-8018</span>
+                <span>chowon3827@naver.com</span>
+            </div>
+        </section>
     </div>
 </body>
 </html>

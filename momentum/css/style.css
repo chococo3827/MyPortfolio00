@@ -1,0 +1,138 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    overflow: hidden;
+}
+h1{
+    color: #fff;
+    margin-right: 0;
+    transition: color 0.5s ease-in-out;
+}
+.clicked{
+    color: tomato;
+}
+.sexy-font{
+    font-family: 'Courier New', Courier, monospace
+}
+.hidden{
+    display: none;
+}
+img{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    /* opacity:80%; */
+    filter: brightness(50%);
+}
+#content{
+    color: white;
+    padding: 25%;
+    padding-bottom: 0;
+    overflow: hidden;
+    position: relative;
+}
+#clock{
+    color: white;
+    font-size: 5em;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%
+    );
+}
+#content form{
+    margin-bottom: 5%;
+}
+#content form input{
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: white;
+    outline: none;
+}
+#content form input::placeholder{
+    color: #ddd;
+}
+#login-form input:nth-child(2){
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#content #remove{
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 40px;
+    cursor: pointer;
+}
+#content .myid{
+    display: flex;
+    margin-top: -20%;
+    margin-bottom: 20%;
+}
+#todo-form input{
+    width: 70%;
+}
+#todo-list button{
+    background: none;
+    border: none;
+    margin: 0 10px;
+}
+#todo-list{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+#quote{
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* 반응형 */
+/* 1400px */
+@media screen and (max-width:1400px){
+    #content{
+        padding-top: 35%;
+    }
+}
+@media screen and (max-width:1024px){
+    #content{
+        padding: 0;
+        padding-top: 45%;
+    }
+}
+@media screen and (max-width:768px){
+    #content{
+        padding-top: 60%;
+    }
+}
+@media screen and (max-width:500px){
+    #content{
+        /* padding: 5%; */
+        padding-top: 70%;
+    }
+    #content form:nth-child(1){
+        margin-bottom: 20%;
+    }
+    #clock{
+        font-size: 4em;
+    }
+}
