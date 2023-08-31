@@ -236,7 +236,7 @@ header .gnbBtn{
 }
 #home .subText p{
     display: block;
-    width: 1050px;
+    width: fit-content;
     font-size: 180px;
     font-family: 'Jua', sans-serif;
     border-right: 2px solid #fff;
@@ -296,7 +296,8 @@ header .gnbBtn{
     text-align: center;
     font-style: italic;
     font-family: 'Pacifico', cursive;
-    padding-top: 25vh;
+    /* padding-top: 25vh; */
+    padding: 30vh 0;
     box-sizing: border-box;
 }
 #aboutMe .content{
@@ -399,7 +400,8 @@ header .gnbBtn{
     text-align: center;
     font-style: italic;
     font-family: 'Pacifico', cursive;
-    padding-top: 25vh;
+    /* padding-top: 25vh; */
+    padding: 30vh 0;
     box-sizing: border-box;
 }
 #mySkill .content{
@@ -507,7 +509,8 @@ header .gnbBtn{
     text-align: center;
     font-style: italic;
     font-family: 'Pacifico', cursive;
-    padding-top: 25vh;
+    /* padding-top: 25vh; */
+    padding: 30vh 0;
     box-sizing: border-box;
     display: flex;
     transform: translateX(35%);
@@ -653,6 +656,15 @@ header .gnbBtn{
     font-size: 50px;
     margin: 30px 0;
 }
+#contact .copyright{
+    text-align: center;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 17px;
+    color: #fff;
+}
 
 
 
@@ -692,11 +704,10 @@ header .gnbBtn{
         left: 3%;
     }
     #home .subText{
-        left: 2%;
+        left: 3%;
     }
     #home .subText p{
-        width: 970px;
-        font-size: 165px;
+        font-size: 150px;
     }
     #aboutMe .content{
         width: 100%;
@@ -706,6 +717,13 @@ header .gnbBtn{
     }
     #aboutMe .content .right{
         font-size: 17px;
+    }
+    #aboutMe .content .right .my-info p:nth-child(1){
+        margin-bottom: 40px;
+    }
+    #aboutMe .content .right .my-info p:nth-child(2){
+        font-size: 18px;
+        line-height: 65px;
     }
     #mySkill .content{
         width: 100%;
@@ -720,10 +738,21 @@ header .gnbBtn{
     #myWork .project .content .inner .project-img{
         width: 67%;
     }
+    #myWork .project:nth-child(n) .content{
+        border-radius: 40% 0% 40% 0% / 40% 0% 40% 0%;
+    }
+    #myWork .project:nth-child(2n) .content{
+        border-radius: 0% 40% 0% 40% / 0% 40% 0% 40%;
+    }
 }
 
 /* 768px */
 @media screen and (max-width:768px){
+    .gnbBtn{
+        width: 35px;
+        height: 20px;
+        right: 5%;
+    }
     #home .mainText span{
         margin-right: 7%;
     }
@@ -732,10 +761,8 @@ header .gnbBtn{
     }
     #home .subText p{
         font-size: 100px;
-        width: 590px;
     }
     #aboutMe .title{
-        padding-top: 0;
         padding: 25vh 0;
     }
     #aboutMe .content{
@@ -798,6 +825,12 @@ header .gnbBtn{
         height: 17px;
         right: 5%;
     }
+    .gnb ul li{
+        line-height: 85px;
+    }
+    .gnb ul li a{
+        font-size: 30px;
+    }
     #home{
         height: 100vh;
     }
@@ -807,6 +840,7 @@ header .gnbBtn{
     }
     #home .subText{
         position: static;
+        margin-left: 3%;
     }
     #home .mainText p{
         font-size: 85px;
@@ -815,13 +849,6 @@ header .gnbBtn{
     }
     #home .subText p{
         font-size: 60px;
-        width: 350px;
-    }
-    .gnb ul li{
-        line-height: 85px;
-    }
-    .gnb ul li a{
-        font-size: 30px;
     }
     #aboutMe .title{
         font-size: 80px;
@@ -837,7 +864,6 @@ header .gnbBtn{
     }
     #mySkill .title{
         height: 90vh;
-        padding: 30vh 0;
         font-size: 80px;
     }
     #mySkill .content{

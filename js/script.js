@@ -82,7 +82,7 @@ $(function(){
         }
     })
     .to('.wrap', {backgroundColor:'#fff', color:'#000', ease:'none', duration:5},0)
-    .fromTo('.contactVideo video', {'clip-path':'inset(60% 60% 60% 60% round 20%)'},
+    .fromTo('.contactVideo video', {'clip-path':'inset(60% 60% 60% 60% round 30%)'},
     {'clip-path':'inset(0% 0% 0% 0% round 0%)',ease:'none', duration:10}, 0)
 })
 
