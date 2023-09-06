@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Infomation</title>
+    <link rel="stylesheet" href="css/project_style.css">
+</head>
+<body>
+    <div class="wrap">
+        <section class="image">
+            <div class="title">
+                <span>Rest in Nature 리뉴얼 페이지</span>
+            </div>
+            <div class="imges">
+                <img src="img/restinnature-pc.jpg" alt="pc버전">
+                <img src="img/restinnature-tablet2.jpg" alt="태블릿버전">
+                <img src="img/restinnature-mobile.jpg" alt="모바일버전">
+            </div>
+        </section>
+
+        <section class="overview">
+            <div class="title">
+                <span>Overview</span>
+            </div>
+            <div class="info">
+                <p>
+                    향수 브랜드 Rest in Nature의 리뉴얼 페이지<br>
+                    자연적인 향을 추구하는 브랜드로 심적으로 편안함을 느낄 수 있도록 디자인했습니다.<br>
+                    미디어 쿼리를 이용해 반응형으로 제작했습니다.
+                </p>
+            </div>
+        </section>
+
+        <section class="guides">
+            <div class="title">
+                <span>Style Guide</span>
+            </div>
+            <div class="content">
+                <div class="font">
+                    <span>Font</span>
+                    <div class="korea">
+                        <span>Nanum Gothic(한글)</span>
+                        <p>자연과 만나는 그 순간 rest in nature : basic</p>
+                        <p>자연과 만나는 그 순간 rest in nature : bold</p>
+                    </div>
+                    <div class="english">
+                        <span>Montserrat(영문)</span>
+                        <p>abcdefg123Rest in Nature</p>
+                        <p>abcdefg123Rest in Nature : bold</p>
+                        <p>abcdefg123Rest in Nature : upper</p>
+                        <p>abcdefg123Rest in Nature : bold&upper</p>
+                    </div>
+                </div>
+                <div class="color">
+                    <span>Color</span>
+                    <div>#fff</div>
+                    <div>#333</div>
+                    <div>#faf2e5</div>
+                    <div>#617a55</div>
+                    <div>#3f2305</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="publishing">
+            <div class="title">
+                <span>Publishing</span>
+            </div>
+            <div class="content">
+                <p>- flex, position을 사용한 레이아웃</p>
+                <p>- 미디어 쿼리를 활용한 반응형 웹 제작(1400px, 1024px, 768px, 500px)</p>
+                <p>- Swiper js를 활용한 슬라이드</p>
+                <p>- 메뉴버튼 클릭시 풀다운 메뉴 구현</p>
+                <p>- jquery를 활용한 스크롤 이벤트 구현</p>
+            </div>
+        </section>
+
+        <section class="problem">
+            <div class="title">
+                <span>Problem & Solution</span>
+            </div>
+            <div class="content">
+                <span>Swiper pagination이 화면이 크기에 따라 위치가 달라지는 현상</span>
+                <p>
+                    전체를 감싸는 div.mySwiper에 position:relative를 준 후<br>
+                    swiper-pagination에 absolute를 주어 mySwiper기준으로 위치를 잡았다.
+                </p>
+
+                <span>화면크기에 따라 스크롤 높이가 달라져 스크롤이벤트 타이밍이 어긋남</span>
+                <p>
+                    이벤트가 들어가는 높이 기준을 좀더 넓게 잡고 1400px을 기준으로 두가지 버전을 만듬
+                </p>
+
+                <span>메뉴버튼 외에 다른 곳을 클릭할 때 메뉴가 닫히지 않음</span>
+                <p>
+                    js파일에서 선택자를 header외에 나머지로 선택한 후 removeClass 사용
+                </p>
+            </div>
+        </section>
+
+        <div class="view-more">
+            <a href="project01/index.html">view site</a>
+            <a href="https://github.com/chococo3827/MyPortfolio00.git">view code</a>
+        </div>
+    </div>
+</body>
+</html>
