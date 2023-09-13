@@ -32,7 +32,7 @@ body{
 /* 공통 부분 */
 .title{
     background: #183D3D;
-    font-size: 50px;
+    font-size: 40px;
     width: 50%;
     text-align: center;
     /* border-bottom: 5px solid #183D3D; */
@@ -86,7 +86,7 @@ section.overview .info{
     padding-left: 12%;
 }
 section.overview .info p{
-    font-size: 25px;
+    font-size: 23px;
     line-height: 4;
 }
 
@@ -108,7 +108,7 @@ section.guides .content .font p:nth-child(2){
 /* korea font */
 section.guides .content .font .korea{
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     margin-top: 50px;
 }
 section.guides .content .font .korea p:nth-child(3){
@@ -123,7 +123,7 @@ section.guides .content .font .english span{
 }
 section.guides .content .font .english{
     font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     margin-top: 50px;
 }
 section.guides .content .font .english p:nth-child(3){
@@ -177,7 +177,7 @@ section.publishing .content{
     padding-left: 12%;
 }
 section.publishing .content p{
-    font-size: 25px;
+    font-size: 23px;
     line-height: 4;
 }
 
@@ -192,13 +192,13 @@ section.problem .content{
     padding-left: 12%;
 }
 section.problem .content p{
-    font-size: 24px;
+    font-size: 23px;
     line-height: 2;
     margin-bottom: 50px;
     /* margin-left: 10px; */
 }
 section.problem .content span{
-    font-size: 21px;
+    font-size: 20px;
     line-height: 4;
     color: #ddd;
     padding-right: 40%;
@@ -216,7 +216,7 @@ section.problem .content span{
 .view-more a{
     margin-right: 100px;
     margin-left: 100px;
-    font-size: 25px;
+    font-size: 23px;
     border: 1px solid;
     padding: 5px 10px;
     border-radius: 10px;

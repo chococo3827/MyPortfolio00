@@ -296,7 +296,7 @@ section.visual .swiper-slide {
 section.visual .swiper-slide img {
     display: block;
     width: 100vw;
-    /* height: 100vh; */
+    height: 100vh;
     object-fit: cover;
 }
 .mySwiper .swiper-pagination{
@@ -862,6 +862,9 @@ footer .inner .footer-info .sns li{
 @media screen and (max-width:1024px){
     header .inner .search input{
         width: 160px;
+    }
+    section.visual .swiper-slide img {
+        height: fit-content;
     }
     section.about .inner{
         width: 100%;

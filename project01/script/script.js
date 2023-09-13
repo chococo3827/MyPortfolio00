@@ -37,29 +37,29 @@ $(window).on('scroll resize', function(){
     // guideInfo_1();
     // guideList_1();
 
-    if(window.innerWidth > 1400){
+    if(window.innerWidth > 1500){
         guideInfo_1();
         guideList_1();
     }
-    if(window.innerWidth <= 1400){
+    if(window.innerWidth <= 1500){
         guideInfo_2();
         guideList_2();
     }
 
     function guideInfo_1(){
-        if(scrollPos > 2100){
+        if(scrollPos > 2000){
             $('.guide-info .text').addClass('on');
         }
         else{
             $('.guide-info .text').removeClass('on');
         }
-        if(scrollPos > 3800){
+        if(scrollPos > 3750){
             $('.guide-info .text').removeClass('on');
         }
     }
     function guideList_1(){
         $('section.guide .inner .guide-list li a').removeClass('on');
-        if(scrollPos > 2100){
+        if(scrollPos > 2000){
             $('section.guide .inner .guide-list li a').removeClass('on');
             $('section.guide .inner .guide-list li:eq(0) a').addClass('on');
         }
