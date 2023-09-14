@@ -193,11 +193,11 @@ header .gnbBtn{
 #home .mainText{
     position: absolute;
     top: 15%;
-    left: 10%;
+    left: 5%;
     font-family: 'Pacifico', cursive;
 }
 #home .mainText p{
-    font-size: 130px;
+    font-size: 150px;
 }
 #home .mainText span{
     display: block;
@@ -726,6 +726,9 @@ header .gnbBtn{
     #home .mainText{
         left: 3%;
     }
+    #home .mainText p{
+        font-size: 120px;
+    }
     #home .subText{
         left: 3%;
     }
@@ -870,7 +873,7 @@ header .gnbBtn{
         margin-left: 3%;
     }
     #home .mainText p{
-        font-size: 85px;
+        font-size: 80px;
         word-wrap: break-word;
         line-height: 2;
     }
