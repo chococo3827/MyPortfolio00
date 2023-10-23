@@ -17,6 +17,15 @@ $(function(){
 //     })
 // })
 
+// simplyScroll
+$(function(){
+    $('#home .imgList').simplyScroll({
+        speed: 4,
+        pauseOnHover: false,
+        pauseOnTouch: false
+    })
+})
+
 // gnbBtn toggle
 $(function(){
     $('.gnbBtn').click(function(){

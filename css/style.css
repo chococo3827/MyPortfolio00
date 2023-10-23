@@ -245,7 +245,7 @@ header .gnbBtn{
     color: red;
 }
 /* 타이핑 애니메이션 */
-#home .subText p{
+/* #home .subText p{
     animation: blink 1s infinite, typing 3s steps(20);
     white-space: nowrap;
     overflow: hidden;
@@ -262,7 +262,7 @@ header .gnbBtn{
     to{
         width: 900px;
     }
-}
+} */
 
 /* #home .svgAni{
     position: absolute;
@@ -285,7 +285,36 @@ header .gnbBtn{
     }
 } */
 
-
+/* 이미지 스크롤 */
+.simply-scroll .simply-scroll-clip .simply-scroll-list li{
+    float: left;
+}
+.simply-scroll .simply-scroll-clip{
+    overflow: hidden;
+    /* transform: rotate(-5deg) translate(150%, 500px);
+    animation-name: imgScroll;
+    animation-duration: 1.8s;
+    opacity: 0; */
+}
+#home .imgList img{
+    width: 400px;
+    filter: brightness(50%);
+}
+#home.motion .simply-scroll .simply-scroll-clip{
+    transform: rotate(-5deg) translate(0%, 500px);
+    opacity: 1;
+    animation-name: imgScroll;
+    animation-duration: 1.8s;
+}
+@keyframes imgScroll{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+        transform: rotate(-5deg) translate(150%, 500px);
+    }
+}
 
 
 /* about me */
