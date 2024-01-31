@@ -95,7 +95,23 @@ $(function(){
     {'clip-path':'inset(0% 0% 0% 0% round 0%)',ease:'none', duration:10}, 0)
 })
 
-// 새 창으로 팝업 띄우기
+// 포토샵 디자인 모달창 띄우기
+$(function(){
+    $('#myWork .design .content .inner a img').click(function(){
+        $('.modal').show();
+
+        let imgSrc = $(this).attr('src');
+        let imgAlt = $(this).attr('alt');
+        $('.modal img').attr('src', imgSrc);
+        $('.modal img').attr('alt', imgAlt);
+
+        $('.modal').click(function(){
+            $('.modal').hide();
+        })
+    })
+})
+
+
 
 // rest in nature
 // 모바일 모드
@@ -109,6 +125,22 @@ function openMobile(){
 function openTablet(){
     const url = '/project01/index.html';
     const name = 'Rest in Nature-tablet'
+    const option = 'width = 1024';
+    window.open(url, name, option);
+}
+
+// Musign page
+// 모바일 모드
+function openMobile4(){
+    const url = '/뮤자인/index.html';
+    const name = 'canvas-mobile'
+    const option = 'width = 450, height = 700';
+    window.open(url, name, option);
+}
+// 태블릿 모드
+function openTablet4(){
+    const url = '/뮤자인/index.html';
+    const name = 'canvas-tablet'
     const option = 'width = 1024';
     window.open(url, name, option);
 }

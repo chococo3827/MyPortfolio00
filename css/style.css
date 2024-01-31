@@ -330,7 +330,7 @@ header .gnbBtn{
     box-sizing: border-box;
 }
 #aboutMe .content{
-    width: 70%;
+    width: 60%;
     height: 50vh;
     display: flex;
     justify-content: space-around;
@@ -342,6 +342,7 @@ header .gnbBtn{
     position: relative;
     border-radius: 100%;
     box-sizing: border-box;
+    float: right;
 }
 #aboutMe .content .left a img{
     width: 100%;
@@ -363,24 +364,24 @@ header .gnbBtn{
 }
 #aboutMe .content .right{
     font-size: 23px;
-    margin-top: -70px;
+    margin-top: -30px;
 }
 #aboutMe .content .right .my-info p:nth-child(1){
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 #aboutMe .content .right .my-info p:nth-child(1) span{
     color: #5C8374;
 }
-#aboutMe .content .right .my-info p:nth-child(2){
-    font-size: 19px;
-    line-height: 70px;
+#aboutMe .content .right .my-info p:last-child{
+    font-size: 17px;
+    line-height: 50px;
 }
 #aboutMe .content .left .academy{
     font-size: 17px;
     margin-top: 35%;
 }
 #aboutMe .content .left .academy p{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #888;
 }
 
@@ -656,7 +657,54 @@ header .gnbBtn{
     border-radius: 50% 0% 50% 0% / 50% 0% 50% 0%;
     margin-left: 10%;
 }
-
+#myWork .project:nth-child(5) .content{
+    border: 1px solid #7aaa64;
+    background: #7aaa64;
+    border-radius: 0% 50% 0% 50% / 0% 50% 0% 50%;
+}
+/* 배너,이벤트 디자인 */
+#myWork .design .content .inner{
+    width: 70%;
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+#myWork .design .content .inner .banner{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: 10px;
+}
+#myWork .design .content .inner .sns{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 500px;
+}
+#myWork .design .content .inner .banner a,
+#myWork .design .content .inner .sns a{
+    display: block;
+    width: 100%;
+}
+#myWork .design .content .inner .sns a{
+    width: 50%;
+}
+#myWork .design .content .inner .banner a img{
+    width: 100%;
+}
+#myWork .design .content .inner .sns a img{
+    width: 95%;
+}
+#myWork .design .content .inner a img{
+    transition: 0.2s;
+    filter: grayscale(100%);
+}
+#myWork .design .content .inner a img:hover{
+    filter: grayscale(0%);
+}
 
 
 
@@ -717,6 +765,26 @@ header .gnbBtn{
     font-size: 17px;
     color: #fff;
 }
+
+/* modal 창 */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none;
+}
+.modalBox{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 
 
 
@@ -799,6 +867,9 @@ header .gnbBtn{
     #myWork .project:nth-child(2n) .content{
         border-radius: 0% 40% 0% 40% / 0% 40% 0% 40%;
     }
+    #myWork .design .content .inner{
+        width: 80%;
+    }
 }
 
 /* 768px */
@@ -816,6 +887,12 @@ header .gnbBtn{
     }
     #home .subText p{
         font-size: 100px;
+    }
+    .simply-scroll .simply-scroll-clip .simply-scroll-list li{
+        margin-top: 200px;
+    }
+    #home .imgList img{
+        width: 300px;
     }
     #aboutMe .title{
         padding: 25vh 0;
@@ -872,6 +949,15 @@ header .gnbBtn{
     #myWork .project:nth-child(n) .content .inner .project-info{
         margin-left: 18%;
     }
+    #myWork .design .content .inner .banner{
+        width: 80%;
+    }
+    #myWork .design .content .inner .sns{
+        width: 80%;
+    }
+    #myWork .design .content .inner{
+        align-items: center;
+    }
     #contact .title span{
         font-size: 40px;
     }
@@ -909,6 +995,9 @@ header .gnbBtn{
     #home .subText p{
         font-size: 60px;
     }
+    .simply-scroll .simply-scroll-clip .simply-scroll-list li{
+        display: none;
+    }
     #aboutMe .title{
         font-size: 80px;
     }
@@ -943,10 +1032,13 @@ header .gnbBtn{
         border-radius: 10% 0% 10% 0% / 10% 0% 10% 0%;
     }
     #myWork .project:nth-child(2n) .content{
-        border-radius: 10% 0% 10% 0% / 10% 0% 10% 0%;
+        border-radius: 0% 10% 0% 10% / 0% 10% 0% 10%;
     }
     #myWork .project:nth-child(n) .content .inner .project-info{
         margin-left: 0%;
+    }
+    #myWork .design .content .inner .sns{
+        height: 320px;
     }
     #contact .title h2{
         font-size: 60px;
@@ -962,5 +1054,8 @@ header .gnbBtn{
     }
     #myWork .project .content .inner .project-info p{
         line-height: 2.5;
+    }
+    .modalBox img{
+        width: 50%;
     }
 }
