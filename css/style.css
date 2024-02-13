@@ -699,12 +699,36 @@ header .gnbBtn{
     width: 95%;
 }
 #myWork .design .content .inner a img{
-    transition: 0.2s;
+    transition: 0.5s;
     filter: grayscale(100%);
 }
 #myWork .design .content .inner a img:hover{
     filter: grayscale(0%);
 }
+#myWork .design .content .inner a{
+    overflow: hidden;
+}
+
+/* 상세페이지 */
+#myWork .detail .content .inner{
+    width: 70%;
+}
+#myWork .detail .content .inner .page{
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+}
+#myWork .detail .content .inner .page a img{
+    width: 100%;
+}
+#myWork .detail .content .inner a img{
+    transition: 0.5s;
+    filter: grayscale(100%);
+}
+#myWork .detail .content .inner a img:hover{
+    filter: grayscale(0%);
+}
+
 
 
 
@@ -773,7 +797,7 @@ header .gnbBtn{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 100;
     display: none;
 }
@@ -785,7 +809,36 @@ header .gnbBtn{
     text-align: center;
 }
 
-
+/* 상세페이지 모달창 */
+.detail-preview{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: none;
+    align-items: center;
+}
+.detail-preview .preview{
+    display: none;
+    width: 960px;
+    height: 850px;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    overflow: auto;
+}
+.detail-preview .preview img{
+    width: 100%;
+}
+.detail-preview.active{
+    display: block;
+}
+.detail-preview .preview.active{
+    display: block;
+}
 
 
 
@@ -958,6 +1011,11 @@ header .gnbBtn{
     #myWork .design .content .inner{
         align-items: center;
     }
+    #myWork .detail .content{margin-top: 45%;}
+    #myWork .detail .content .inner .page{
+        display: flex;
+        flex-direction: column;
+    }
     #contact .title span{
         font-size: 40px;
     }
@@ -1054,6 +1112,9 @@ header .gnbBtn{
     }
     #myWork .project .content .inner .project-info p{
         line-height: 2.5;
+    }
+    #myWork .detail .content .inner .page{
+        margin-top: 50px;
     }
     .modalBox img{
         width: 50%;

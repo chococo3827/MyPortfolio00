@@ -111,68 +111,107 @@ $(function(){
     })
 })
 
+// 상세페이지
+// let previewContainer = document.querySelector('.detail-preview');
+// let previewBox = document.querySelectorAll('.preview');
+
+// document.querySelectorAll('#myWork .detail .content .inner .page a').forEach(detail => {
+//     detail.onclick = () => {
+//         previewContainer.computedStyleMap.display = 'block';
+//         let name = detail.getAttribute('data-name');
+//         previewBox.forEach(preview => {
+//             let target = preview.getAttribute('data-target');
+//             if(name == target){
+//                 preview.classList.add('active');
+//             }
+//         })
+//     }
+// })
+$(function(){
+    $('#myWork .detail .content .inner .page a:first-child').on('click', function(){
+        $('.detail-preview').addClass('active');
+        $('.detail-preview .preview:first-child').addClass('active');
+
+        $('.detail-preview').on('click', function(){
+            $('.detail-preview').removeClass('active');
+            $('.detail-preview .preview:first-child').removeClass('active');
+        })
+    })
+
+    $('#myWork .detail .content .inner .page a:last-child').on('click', function(){
+        $('.detail-preview').addClass('active');
+        $('.detail-preview .preview:last-child').addClass('active');
+
+        $('.detail-preview').on('click', function(){
+            $('.detail-preview').removeClass('active');
+            $('.detail-preview .preview:last-child').removeClass('active');
+        })
+    })
+})
+
 
 
 // rest in nature
-// 모바일 모드
-function openMobile(){
-    const url = '/project01/index.html';
-    const name = 'Rest in Nature-mobile'
-    const option = 'width = 450, height = 700';
-    window.open(url, name, option);
-}
 // 태블릿 모드
-function openTablet(){
-    const url = '/project01/index.html';
-    const name = 'Rest in Nature-tablet'
-    const option = 'width = 1024';
-    window.open(url, name, option);
-}
+// function openTablet(){
+//     const url = '/project01/index.html';
+//     const name = 'Rest in Nature-tablet'
+//     const option = 'width = 1024';
+//     window.open(url, name, option);
+// }
+// 모바일 모드
+// function openMobile(){
+//     const url = '/project01/index.html';
+//     const name = 'Rest in Nature-mobile'
+//     const option = 'width = 450, height = 700';
+//     window.open(url, name, option);
+// }
 
-// Musign page
-// 모바일 모드
-function openMobile4(){
-    const url = '/뮤자인/index.html';
-    const name = 'canvas-mobile'
-    const option = 'width = 450, height = 700';
-    window.open(url, name, option);
-}
-// 태블릿 모드
-function openTablet4(){
-    const url = '/뮤자인/index.html';
-    const name = 'canvas-tablet'
-    const option = 'width = 1024';
-    window.open(url, name, option);
-}
 
 // login page
 // 모바일 모드
-function openMobile2(){
-    const url = '/momentum/index.html';
-    const name = 'LoginPage-mobile'
-    const option = 'width = 450, height = 700';
-    window.open(url, name, option);
-}
 // 태블릿 모드
-function openTablet2(){
-    const url = '/momentum/index.html';
-    const name = 'LoginPage-tablet'
-    const option = 'width = 1024';
-    window.open(url, name, option);
-}
+// function openTablet2(){
+//     const url = '/momentum/index.html';
+//     const name = 'LoginPage-tablet'
+//     const option = 'width = 1024';
+//     window.open(url, name, option);
+// }
+// function openMobile2(){
+//     const url = '/momentum/index.html';
+//     const name = 'LoginPage-mobile'
+//     const option = 'width = 450, height = 700';
+//     window.open(url, name, option);
+// }
 
 // Canvas page
-// 모바일 모드
-function openMobile3(){
-    const url = '/MEME-MAKER/index.html';
-    const name = 'canvas-mobile'
-    const option = 'width = 450, height = 700';
-    window.open(url, name, option);
-}
 // 태블릿 모드
-function openTablet3(){
-    const url = '/MEME-MAKER/index.html';
-    const name = 'canvas-tablet'
-    const option = 'width = 1024';
-    window.open(url, name, option);
-}
+// function openTablet3(){
+//     const url = '/MEME-MAKER/index.html';
+//     const name = 'canvas-tablet'
+//     const option = 'width = 1024';
+//     window.open(url, name, option);
+// }
+// 모바일 모드
+// function openMobile3(){
+//     const url = '/MEME-MAKER/index.html';
+//     const name = 'canvas-mobile'
+//     const option = 'width = 450, height = 700';
+//     window.open(url, name, option);
+// }
+
+// Musign page
+// 태블릿 모드
+// function openTablet4(){
+//     const url = '/뮤자인/index.html';
+//     const name = 'canvas-tablet'
+//     const option = 'width = 1024';
+//     window.open(url, name, option);
+// }
+// 모바일 모드
+// function openMobile4(){
+//     const url = '/뮤자인/index.html';
+//     const name = 'canvas-mobile'
+//     const option = 'width = 450, height = 700';
+//     window.open(url, name, option);
+// }
