@@ -955,7 +955,7 @@ header .gnbBtn{
         width: 70%;
     }
     #aboutMe .content .left .academy{
-        margin-top: 30%;
+        margin-top: 10%;
     }
     #aboutMe .content .right{
         margin-top: 5%;
@@ -963,6 +963,9 @@ header .gnbBtn{
     #aboutMe .content .right .my-info p:nth-child(1){
         margin-bottom: 3%;
         font-size: 20px;
+    }
+    #aboutMe .content .left a{
+        margin-top: -470px;
     }
     #mySkill .content{
         width: 95%;
